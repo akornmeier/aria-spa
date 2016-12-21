@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="dequeuApp">
+  <head>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/angular.min.js"></script>
+    <script src="assets/angular-route.js"></script>
+    <script src="script.js"></script>
+    <title ng-bind="title"></title>
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="container">
+      <nav class="navbar navbar-light bg-faded">
+        <button class="navbar-toggler hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="navbar-toggleable-xs collapse" id="navbar-header" aria-expanded="false">
+          <a class="navbar-brand" href="#home">Angular Routing Example</a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="main" tabindex="-1">
+        <div ng-view></div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted">
+            <a href="http://www.deque.com">
+              <img id="footer_logo" src="assets/deque_logo_smaller.png" width="93" height="33" alt="Deque Systems">
+            </a>
+          </span>
+        </div>
+      </footer>
+
+      <div id="liveregion" class="visuallyhidden" role="log" aria-live="assertive" aria-atomic="false" aria-relevant="additions">
+
+      </div>
+    </div>
+  </body>
+</html>

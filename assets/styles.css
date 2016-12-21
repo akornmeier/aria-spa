@@ -1,0 +1,24 @@
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute !important;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#main {
+  margin-top: 15px;
+}
+
+:focus, #main:focus {
+  outline: 3px solid purple!important;
+}
