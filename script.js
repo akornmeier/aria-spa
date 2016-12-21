@@ -42,9 +42,10 @@ dequeuApp.run(['$location', '$rootScope', function($location, $rootScope) {
 
   $rootScope.$on('$viewContentLoaded', function () {
     if(history) {
-      document.querySelector('#liveregion').append("Loading Content");
+      var liveRegion = document.querySelector('#liveregion');
+      liveRegion.appendChild(document.createTextNode('Loading Content'));
       setTimeout(function() {
-        document.querySelector('#liveregion').append($rootScope.title);
+        liveRegion.appendChild(document.createTextNode($rootScope.title));
         document.querySelector('#main h1:first-child').focus();
       }, 850);
     }
