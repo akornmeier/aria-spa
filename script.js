@@ -45,7 +45,7 @@ dequeuApp.run(['$location', '$rootScope', function($location, $rootScope) {
       document.querySelector('#liveregion').append("Loading Content");
       setTimeout(function() {
         document.querySelector('#liveregion').append($rootScope.title);
-        document.querySelector('#main h1').focus();
+        document.querySelector('#main h1:first-child').focus();
       }, 850);
     }
   });

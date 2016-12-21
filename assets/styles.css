@@ -19,6 +19,6 @@
   margin-top: 15px;
 }
 
-:focus, #main:focus {
+:focus, h1[tabindex]:focus {
   outline: 3px solid purple!important;
 }
